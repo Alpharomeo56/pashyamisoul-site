@@ -102,4 +102,4 @@ pashyamisoul-site/
 Amith Rajolkar
 
 GitHub:
-https://github.com/Alpharomeo56
+https://github.com/pashyamisoul
