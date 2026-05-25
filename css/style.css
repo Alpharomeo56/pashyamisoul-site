@@ -392,6 +392,16 @@ z-index: 2;
   body {
     overflow-x: hidden;
   }
+  .contact-quote {
+  display: none;
+}
+.contact-grid {
+  grid-template-columns: 1fr;
+}
+
+.contact-card {
+  width: 100%;
+}
 
 }
 
@@ -444,34 +454,133 @@ z-index: 2;
 
 @media (max-width: 768px) {
 
+  .hero,
+.hero-text,
+.hero-visual,
+.hero-card,
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+  nav {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.nav-logo {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+}
+  
   nav {
     padding: 1rem;
     flex-direction: column;
     gap: 1rem;
   }
-  
-  .hero {
-  padding: 7rem 2rem 4rem;
+
+.nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
 }
 
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
+.nav-links a {
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+}
+
+.nav-links a {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 .hero {
-  padding: 7rem 2rem 4rem;
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+  padding: 9rem 1.5rem 3rem;
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  line-height: 1;
+}
+
+.hero-eyebrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  font-size: 0.65rem;
+  line-height: 1.8;
+  letter-spacing: 0.12em;
+
+  text-align: center;
+  width: 100%;
+}
+
+.hero-eyebrow::before {
+  width: 1.8rem;
+  flex-shrink: 0;
+}
+
+.hero-role,
+.hero-subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.hero-cta {
+  justify-content: center;
+}
+
+.hero-text,
+.hero-visual {
+  width: 100%;
+}
+
+.hero-card {
+  width: 100%;
+  max-width: 100%;
 }
 
   .hero-card {
